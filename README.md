@@ -30,3 +30,41 @@ The data sources used for this market analysis are:
 ### Additional Dataset
 - Weather
 - Demographics (Industry Salary Data)
+# Tools used
+- Power BI
+- Power Query
+- DAX (Data Analysis Expression)
+# Data Cleaning and Transformation
+- Data loading and inspection
+- Data cleaning and formatting
+- Data transformation process such as splitting and unpivoting columns
+- Handling missing, null and misspelt values
+- Eliminate redundant rows
+# Data Analysis and Visualizations
+The seven tables were imported into power BI and connected into a table relationship. The data model is shown below:
+
+
+Measures were created using DAX expressions to gain better understanding of the dataset. Some of the key measures are:
+
+Several visualizations were created for the market analysis.
+- **Linear regression plot** was created to establish the relationship between sales and income and also to establish the relationship between customer ratings and product return rate.
+- **Linear regression formula** was generated and used to predict customer income from customer sales.
+- **Histogram plot** was created to show the predicted income distribution.
+- **Heat map** was created to show household Income by location.
+- **Other visuals** created for the market analysis were **line chart** to show the trend of customer’s sales with time, **tree map** to show top ten states by population, **clustered column** and **bar charts** to show top customers with high predicted income, **matrix** and **tables** to show customers based on their income and their location and **donut chart** to show the percentage of the categories of customer’s income and product recommendation.
+# Results
+The linear regression formula between sales and income was given as:
+AVG Sales=0.01×AVG Income-722.14
+The correlation (R2 value) between sales and income was 0.78. This shows that there is a
+strong positive correlation between sales and income. The correlation (R2 value) between customer rating and product return rate was 0.69. This shows a strong negative relationship
+between product return rate and customer ratings. The customer with the highest predicted
+income has a customer id of JLit30836 with an income of $597,214. There are 1000 customers. 45.3% of these customers are located in California, Florida, Texas, New York and
+Illinois. High income customers are located in Illinois, New Jersey, District of Columbia, Hawaii, California, Texas and Nevada. 81.9% are low-income customers, 15% are medium
+income customers and 3.1% are high income customers. 
+# Recommendations
+There are 1000 customers of which 81.9% are low-income customers. Therefore, the low price products should be advertised the most. However, the medium price products should
+also be advertised in areas where the medium income customers are situated while the high
+price product can also be advertised in areas where the high income customers are located
+as shown in the power BI reports. 
+
+
